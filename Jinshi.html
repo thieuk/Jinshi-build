@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <title>JINSHI</title>
+</head>
+<body>
+    <nav>
+        <a href="#home" class="active-nav">HOME</a>
+        <a href="#material">MATERIALS</a>
+        <a href="#echo">ECHOES</a>
+        <a href="#weapon">WEAPONS</a>
+        <a href="#team">TEAMS</a>
+    </nav>
+    <main>
+        <section id="home" class="active-section">
+            <img src="img/loong.png" src="Chinese dragon">
+            <h1>JINSHI</h1>
+            <h3>[Magistrate of Jinzhou]</h3>
+            <div>
+                <img src="img/element.png" src="Spectro">
+                <img src="img/stars.png" src="5 stars">
+            </div>
+            <span>
+                SCROLL
+                <img src="img/scroll-arrow.png" src="down arrow">
+            </span>
+        </section>
+        <section id="material">
+            <div id="ascension">
+                <h1>Ascension Materials:</h1>
+                <div>
+                    <span>
+                        <img src="img/LF-Howler-Core.png" alt="LF Howler Core">
+                        <p>LF Howler Core <br> x4</p>
+                    </span>
+                    <span>
+                        <img src="img/MF-Howler-Core.png" alt="MF Howler Core">
+                        <p>MF Howler Core <br> x12</p>
+                    </span>
+                    <span>
+                        <img src="img/HF-Howler-Core.png" alt="HF Howler Core">
+                        <p>HF Howler Core <br> x12</p>
+                    </span>
+                    <span>
+                        <img src="img/FF-Howler-Core.png" alt="FF Howler Core">
+                        <p>FF Howler Core <br> x4</p>
+                    </span>
+                    <span>
+                        <img src="img/Elegy-Tacet-Core.png" alt="Elegy Tacet Core">
+                        <p>Elegy Tacet Core <br> x46</p>
+                    </span>
+                    <span>
+                        <img src="img/Gloom-Slough.png" alt="Gloom Slough">
+                        <p>Gloom Slough <br> x60</p>
+                    </span>
+                    <span>
+                        <img src="img/Credits.png" alt="Shell Credits">
+                        <p>Shell Credits <br> x170,000</p>
+                    </span>
+                </div>
+            </div>
+            <div id="forte">
+                <h1>Forte Materials:</h1>
+                <div>
+                    <span>
+                        <img src="img/LF-Howler-Core.png" alt="LF Howler Core">
+                        <p>LF Howler Core <br> x25</p>
+                    </span>
+                    <span>
+                        <img src="img/MF-Howler-Core.png" alt="MF Howler Core">
+                        <p>MF Howler Core <br> x28</p>
+                    </span>
+                    <span>
+                        <img src="img/HF-Howler-Core.png" alt="HF Howler Core">
+                        <p>HF Howler Core <br> x40</p>
+                    </span>
+                    <span>
+                        <img src="img/FF-Howler-Core.png" alt="FF Howler Core">
+                        <p>FF Howler Core <br> x57</p>
+                    </span>
+                    <span>
+                        <img src="img/LF-Howler-Core.png" alt="LF Howler Core">
+                        <p>LF Howler Core <br> x25</p>
+                    </span>
+                    <span>
+                        <img src="img/MF-Howler-Core.png" alt="MF Howler Core">
+                        <p>MF Howler Core <br> x28</p>
+                    </span>
+                    <span>
+                        <img src="img/HF-Howler-Core.png" alt="HF Howler Core">
+                        <p>HF Howler Core <br> x40</p>
+                    </span>
+                    <span>
+                        <img src="img/FF-Howler-Core.png" alt="FF Howler Core">
+                        <p>FF Howler Core <br> x57</p>
+                    </span>
+                    <span>
+                        <img src="img/Gloom-Slough.png" alt="Gloom Slough">
+                        <p>Gloom Slough <br> x26</p>
+                    </span>
+                    <span>
+                        <img src="img/Credits.png" alt="Shell Credits">
+                        <p>Shell Credits <br> x2,030,000</p>
+                    </span>
+                </div>
+            </div>
+        </section>
+        <section id="echo">
+            <div>
+                <h1>Echoes Stat:</h1>
+                <ul>
+                    <li>4 cost: Crit Rate / DMG</li>
+                    <li>3 cost: Spectro / ATK %</li>
+                    <li>3 cost: Spectro / ATK %</li>
+                    <li>1 cost: ATK %</li>
+                    <li>1 cost: ATK %</li>
+                </ul>
+            </div>
+            <div>
+                <h1>Sub Stat Priority:</h1>
+                <ol>
+                    <li>Crit Rate / DMG</li>
+                    <li>Resonance Skill</li>
+                    <li>ATK</li>
+                </ol>
+            </div>
+            <div>
+                <h1>5pc Sets:</h1>
+                <ol>
+                    <li>5pc Celestial Light</li>
+                    <li>5pc Lingering Tunes</li>
+                </ol>
+            </div>
+            <div>
+                <h1>2pc Sets:</h1>
+                <ul>
+                    <li>2pc Celestial Light</li>
+                    <li>2pc Eternal Radiance</li>
+                    <li>2pc Empyrean Anthem</li>
+                    <li>2pc Lingering Tunes</li>
+                </ul>
+            </div>
+        </section>
+        <section id="weapon">
+
+        </section>
+        <section id="team">
+
+        </section>
+    </main>
+    <script>
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll("nav a");
+        let currentSectionIndex = 1;
+
+        function updateVisibleSection(index) {
+            sections.forEach((section, i) => {
+                section.classList.toggle("materials-active", i === 1);
+                section.classList.toggle("active-section", i === index && i !== 1);
+                section.classList.toggle("inactive-section", i !== index);
+            });
+
+            navLinks.forEach((link, i) => {
+                link.classList.toggle("active-nav", i === index);
+            });
+        }
+
+        window.addEventListener("wheel", (event) => {
+            if (event.deltaY > 0 && currentSectionIndex < sections.length - 1) {
+                currentSectionIndex++;
+            } else if (event.deltaY < 0 && currentSectionIndex > 0) {
+                currentSectionIndex--;
+            }
+
+            updateVisibleSection(currentSectionIndex);
+        });
+
+        navLinks.forEach((link, index) => {
+            link.addEventListener("click", (e) => {
+                e.preventDefault();
+                currentSectionIndex = index;
+                updateVisibleSection(currentSectionIndex);
+            });
+        });
+
+        updateVisibleSection(currentSectionIndex);
+      </script>
+</body>
+</html>
