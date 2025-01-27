@@ -71,14 +71,13 @@ main section.inactive-section {
 }
 
 .line {
-    display: block !important;
     height: fit-content;
     border-top: 2px solid var(--main-color);
     margin-bottom: 10px;
 }
 
 .line img {
-    border: none !important;
+    width: 40px;
     transform: translateY(-3px);
 }
 
@@ -195,7 +194,7 @@ main section.inactive-section {
     }
 }
 
-#material div div {
+#material div div.info {
     display: grid;
     grid-template-columns: repeat(4, auto);
     grid-template-rows: repeat(3, auto);
@@ -221,14 +220,14 @@ main section.inactive-section {
     }
 }
 
-#material span {
+#material div div.info span {
     display: flex;
     align-items: center;
     font-family: sans-serif;
     text-shadow: 0 0 5px #000;
 }
 
-#material img {
+#material div div.info img {
     width: 40px;
     background-color: #000;
     border: 2px solid var(--main-color);
