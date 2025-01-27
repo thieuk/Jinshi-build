@@ -165,8 +165,7 @@
 
         function updateVisibleSection(index) {
             sections.forEach((section, i) => {
-                section.classList.toggle("materials-active", i === 1);
-                section.classList.toggle("active-section", i === index && i !== 1);
+                section.classList.toggle("active-section", i === index);
                 section.classList.toggle("inactive-section", i !== index);
             });
 

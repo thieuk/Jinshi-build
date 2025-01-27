@@ -58,7 +58,7 @@ main section {
 }
 
 main section.active-section {
-    animation: appear 0.8s;
+    animation: appear 1s;
 }
 
 @keyframes appear {
@@ -180,11 +180,11 @@ main section.inactive-section {
     padding-top: 100px;
 }
 
-.materials-active {
-    animation: translateY 0.8s;
+#ascension {
+    animation: ascension-translateY 1s;
 }
 
-@keyframes translateY {
+@keyframes ascension-translateY {
     from {
         transform: translateY(-25px);
         opacity: 0;
@@ -204,6 +204,21 @@ main section.inactive-section {
 
 #forte {
     margin-top: 30px;
+    animation: forte-translateY 1s;
+}
+
+@keyframes forte-translateY {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 #material span {
