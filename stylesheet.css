@@ -1,8 +1,12 @@
+:root {
+    --main-color: #dab67d;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #dab67d;
+    color: var(--main-color);
 }
 
 body {
@@ -66,6 +70,18 @@ main section.inactive-section {
     display: none !important;
 }
 
+.line {
+    display: block !important;
+    height: fit-content;
+    border-top: 2px solid var(--main-color);
+    margin-bottom: 10px;
+}
+
+.line img {
+    border: none !important;
+    transform: translateY(-3px);
+}
+
 /* home */
 #home {
     background-image: url("img/Wuthering-Waves-Jinhsi-Feature-Art.jpg");
@@ -122,7 +138,7 @@ main section.inactive-section {
     height: 175px;
     background-color: rgba(0, 0, 0, 0.80);
     border-radius: 30px 0 30px 0;
-    border: 3px solid #dab67d;
+    border: 3px solid var(--main-color);
     outline: 3px solid #000;
     animation: name-container 1.5s;
 }
@@ -179,15 +195,11 @@ main section.inactive-section {
     }
 }
 
-#material div h1 {
-    margin-bottom: 20px;
-}
-
 #material div div {
     display: grid;
     grid-template-columns: repeat(4, auto);
     grid-template-rows: repeat(3, auto);
-    gap: 30px;
+    gap: 20px;
 }
 
 #forte {
@@ -197,14 +209,14 @@ main section.inactive-section {
 #material span {
     display: flex;
     align-items: center;
-    font-weight: bold;
     font-family: sans-serif;
     text-shadow: 0 0 5px #000;
 }
 
 #material img {
-    width: 50px;
-    border: 2px solid #dab67d;
+    width: 40px;
+    background-color: #000;
+    border: 2px solid var(--main-color);
     border-radius: 50%;
     margin-right: 5px;
 }
@@ -231,7 +243,7 @@ main section.inactive-section {
     width: 250px;
     height: 135px;
     background-color: #474747;
-    border: 3px solid #dab67d;
+    border: 3px solid var(--main-color);
     border-radius: 5px;
     padding: 15px;
 }
