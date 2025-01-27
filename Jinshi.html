@@ -16,12 +16,13 @@
     </nav>
     <main>
         <section id="home" class="active-section">
-            <img src="img/loong.png" src="Chinese dragon">
-            <h1>JINSHI</h1>
-            <h3>[Magistrate of Jinzhou]</h3>
             <div>
-                <img src="img/element.png" src="Spectro">
-                <img src="img/stars.png" src="5 stars">
+                <h1>JINSHI</h1>
+                <h3>[ Magistrate of Jinzhou ]</h3>
+                <div>
+                    <img src="img/element.png" src="Spectro">
+                    <img src="img/stars.png" src="5 stars">
+                </div>
             </div>
             <span>
                 SCROLL
@@ -154,7 +155,7 @@
     <script>
         const sections = document.querySelectorAll("section");
         const navLinks = document.querySelectorAll("nav a");
-        let currentSectionIndex = 1;
+        let currentSectionIndex = 0;
 
         function updateVisibleSection(index) {
             sections.forEach((section, i) => {
