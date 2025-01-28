@@ -77,7 +77,7 @@ main section.inactive-section {
 }
 
 .line img {
-    width: 40px;
+    width: 40px !important;
     transform: translateY(-3px);
 }
 
@@ -267,3 +267,77 @@ main section.inactive-section {
 }
 
 /* weapons */
+#weapon {
+    display: grid;
+    place-content: center;
+    padding-top: 100px;
+}
+
+#weapon div.info {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    gap: 50px;
+    font-family: sans-serif;
+}
+
+#weapon div.info > div {
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    text-shadow: 0 0 5px #000;
+}
+
+#weapon img {
+    width: 100px;
+}
+
+#four-star-weapons {
+    margin-top: 50px;
+}
+
+#weapon div.info > div:nth-of-type(1) {
+    animation: weapon-appear1 1s;
+}
+
+@keyframes weapon-appear1 {
+    from {
+        transform: translateX(-25px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+#weapon div.info > div:nth-of-type(2) {
+    animation: weapon-appear2 1s;
+}
+
+@keyframes weapon-appear2 {
+    0% {opacity: 0;}
+    25% {
+        opacity: 0;
+        transform: translateX(-25px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#weapon div.info > div:nth-of-type(3) {
+    animation: weapon-appear3 1s;
+}
+
+@keyframes weapon-appear3 {
+    0% {opacity: 0;}
+    50% {
+        opacity: 0;
+        transform: translateX(-25px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
